@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title> ALSHORE </title>
+        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <section class="header"> 
+            <div class="menuICON"><i class="fa-solid fa-bars" onclick="showMenu()"></i></div>
+        <nav>
+            <a href="Home.html"><img src="images/logo.png" class="ano"> </a>
+            <div class="nav-links" id="navlinks">
+                <div class="sepICONS"><i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i></div>
+                <ul>
+                    <li> <a href="Home.html"><i class="fa-solid fa-house"></i>&nbsp;Home</a></li>
+                    <li> <a href=""><i class="fa-solid fa-mug-hot"></i>&nbsp;Features</a>
+                        <ul>
+                            <li><a href="News.html">News & Events  </a></li>
+                            <li><a href="Events.html">Calendar</a></li>
+                            <li><a href="Testimonies.html">Testimonies</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="Schools.html"><i class="fa-solid fa-school"></i>&nbsp;Schools</a></li>
+                    <li> <a href="Curriculum.html"><i class="fa-solid fa-pen-nib"></i>&nbsp;Curriculum</a></li>
+                    <li> <a href=""><i class="fa-solid fa-book"></i>&nbsp;Resources</a>
+                     <ul>
+                            <li><a href="Videos.html"> Instructional Videos</a></li>
+                            <li><a href="Modules.html"> Learning Modules</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href=""><i class="fa-solid fa-user" style="color:gold;"></i>&nbsp;<font color=gold>About</font></a>
+                        <ul>
+                            <li><a href="Careers.html">Careers</a></li>
+                            <li><a href="Contact.html"> <i class="fa-solid fa-square-check"></i> &nbsp;Contact</a></li>
+                            <li><a href="Structure.html"> Organizational Structure</a></li>
+                            <li><a href="Overview.html">Overview </a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="FAQ.html"><i class="fa-solid fa-message"></i>&nbsp;FAQ</a></li>
+                </ul>
+            </div>
+        
+        </nav>
+        <div class="text-box">
+            <h1>CONTACT US</h1>
+            <p></p>
+            
+        </div>
+        </section>
+<!------------------------------CONTENT OF THE PAGE--------------------------------------------------------> 
+<center>
+<h2 style="padding:0 5px ; color: aliceblue;width:40vw ; margin:2%;text-align: center;background: linear-gradient(rgb(236, 82, 10),red);border-radius:10px ;">Our Location</h2>
+</center>
+<section class="location">
+    
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3962.919051601274!2d125.3493072741331!3d6.656954821599902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x32f9b7d21f16ec87%3A0x23f6c13851360e3c!2sPadada%20National%20High%20School!5e0!3m2!1sen!2sph!4v1690986204647!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+<section class="dakongscreen">
+    <div class="onggoy">
+        <div>
+            <i class="fa-solid fa-phone"></i>
+            <span>
+                <h5>+639465172377</h5>
+            <p>Monday to Friday, 7:30 AM to 4:30 PM</p>
+            </span>
+        </div>
+   
+         <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <span>
+                <h5>Padada National High School</h5>
+                <p>Padada, Davao del Sur</p>
+            </span>
+        </div>
+        <div>
+            <i class="fa-solid fa-envelope"></i>
+            <span>
+                <h5>alsbanahi2023@gmail.com</h5>
+                <p>Email you queries</p>
+            </span>
+        </div>
+    </div>
+    <div class="formSaMessage" >
+        <form action="https://formsubmit.co/alsbanahi2023@gmail.com" method="POST">
+            <input type="text" placeholder="Enter your name" name="name" required>
+            <input type="text" placeholder="Enter your Email Address" name="email"  required>
+            <input type="text" placeholder="Enter your subject" name="subject"  required>
+            <textarea rows="8" placeholder="Message" name="message" required Style="overflow-y:scroll;"></textarea><br>
+            <input type="hidden" name="_template" value="table">
+            <button type="submit" class="AtchupRed">Send Message</button>
+        </form>
+
+    </div>
+
+
+</section>
+
+
+
+
+<!------------------FOOTER------------------------------------------------------>
+<section class="footer">
+    <H4>K to 12 Graduates: </H4>
+    <p>Pursuing Dreams and Fostering Resilience in the Face of Adversity </p>
+    <div class="icon">
+        <a href="https://www.facebook.com/groups/ALSDAVAO" target="_blank" style="color: black;"><i  class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.youtube.com/@alsshsbanahi" target="_blank" style="color: black;" ><i class="fa-brands fa-youtube"></i></a>
+        <a href="Contact.html"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+    <p>Made with <i class="fa-regular fa-heart"></i> by Kaiser Leon</p>
+</section>
+
+
+
+
+<!-------------TOGGLE MENU----------------------------------------------------------->
+        <script>
+            var navlinks=document.getElementById("navlinks");
+                function showMenu(){
+                    navlinks.style.right="0";
+                }
+                function hideMenu(){
+                    navlinks.style.right="-300px";
+                }
+        </script>
+
+    </body>
+</html>

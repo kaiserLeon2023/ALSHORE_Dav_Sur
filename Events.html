@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title> ALSHORE </title>
+        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <section class="header"> 
+            <div class="menuICON"><i class="fa-solid fa-bars" onclick="showMenu()"></i></div>
+        <nav>
+            <a href="Home.html"><img src="images/logo.png" class="ano"> </a>
+            <div class="nav-links" id="navlinks">
+                <div class="sepICONS"><i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i></div>
+                <ul>
+                    <li> <a href="Home.html"><i class="fa-solid fa-house"></i>&nbsp;Home</a></li>
+                    <li> <a href=""><i class="fa-solid fa-mug-hot" style="color:gold;"></i>&nbsp;<font color=gold>Features</font></a>
+                        <ul>
+                            <li><a href="News.html">News & Events  </a></li>
+                            <li><a href="Events.html"><i class="fa-solid fa-square-check"></i> &nbsp;Calendar</a></li>
+                            <li><a href="Testimonies.html">Testimonies</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="Schools.html"><i class="fa-solid fa-school"></i>&nbsp;Schools</a></li>
+                    <li> <a href="Curriculum.html"><i class="fa-solid fa-pen-nib"></i>&nbsp;Curriculum</a></li>
+                    <li> <a href=""><i class="fa-solid fa-book"></i>&nbsp;Resources</a>
+                     <ul>
+                            <li><a href="Videos.html"> Instructional Videos</a></li>
+                            <li><a href="Modules.html"> Learning Modules</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href=""><i class="fa-solid fa-user"></i>&nbsp;About</a>
+                        <ul>
+                            <li><a href="Careers.html">Careers</a></li>
+                            <li><a href="Contact.html"> Contact</a></li>
+                            <li><a href="Structure.html"> Organizational Structure</a></li>
+                            <li><a href="Overview.html">Overview </a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="FAQ.html"><i class="fa-solid fa-message"></i>&nbsp;FAQ</a></li>
+                </ul>
+            </div>
+        
+        </nav>
+        <div class="text-box">
+            <h1>SCHOOL CALENDAR</h1>
+            <p></p>
+            
+        </div>
+        </section>
+<!------------------------------CONTENT OF THE PAGE--------------------------------------------------------> 
+
+<div style="width: 80%;margin:3% 10%;" class="tableContainer">
+    <table style="width: 82vw;height: 50vh;background:linear-gradient(rgb(247, 246, 227), rgb(118, 255, 232) );border-radius: 5px; border: 5px solid black;text-align: center;font-weight: bold;" border="3">
+        <thead style="background: rgb(22, 22, 22);color: white;">
+            <th>Event</th>
+            <th>Time</th>
+            <th>Date</th>
+        </thead>
+        <tbody >
+            <tr>
+                <td>ALSHORE LAUNCHING</td>
+                <td>8:00 AM</td>
+                <td>August 11, 2023 </td>
+            </tr>
+            <tr>
+                <td>ENROLLMENT</td>
+                <td>Anytime / Weekdays</td>
+                <td>Anytime</td>
+            </tr>
+            <tr>
+                <td>1st Quarter Examination</td>
+                <td>8:00 AM - 5:00 PM</td>
+                <td> --- </td>
+            </tr>
+            <tr>
+                <td>2nd Quarter Examination</td>
+                <td>8:00 AM - 5:00 PM</td>
+                <td> --- </td>
+            </tr>
+            <tr>
+                <td>Updating Semistral Report Card</td>
+                <td>8:00 AM - 5:00 PM</td>
+                <td> --- </td>
+            </tr>
+
+            <tr>
+                <td>3rd Quarter Examination</td>
+                <td>8:00 AM - 5:00 PM</td>
+                <td> --- </td>
+            </tr>
+            <tr>
+                <td>4th Quarter Examination</td>
+                <td>8:00 AM - 5:00 PM</td>
+                <td> --- </td>
+            </tr>
+            <tr>
+                <td>Updating Semistral Report Card</td>
+                <td>8:00 AM - 5:00 PM</td>
+                <td> --- </td>
+            </tr>
+            <tr>
+                <td>ALSHORE Graduation</td>
+                <td>8:00 AM - 5:00 PM</td>
+                <td> --- </td>
+            </tr>
+
+        </tbody>
+
+    </table>
+</div>
+
+
+
+
+
+<!------------------FOOTER------------------------------------------------------>
+<section class="footer">
+    <H4>K to 12 Graduates: </H4>
+    <p>Pursuing Dreams and Fostering Resilience in the Face of Adversity </p>
+    <div class="icon">
+        <a href="https://www.facebook.com/groups/ALSDAVAO" target="_blank" style="color: black;"><i  class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.youtube.com/@alsshsbanahi" target="_blank" style="color: black;" ><i class="fa-brands fa-youtube"></i></a>
+        <a href="Contact.html"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+    <p>Made with <i class="fa-regular fa-heart"></i> by Kaiser Leon</p>
+</section>
+
+
+
+
+<!-------------TOGGLE MENU----------------------------------------------------------->
+        <script>
+            var navlinks=document.getElementById("navlinks");
+                function showMenu(){
+                    navlinks.style.right="0";
+                }
+                function hideMenu(){
+                    navlinks.style.right="-300px";
+                }
+        </script>
+
+    </body>
+</html>

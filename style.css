@@ -1,0 +1,2579 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+}
+.header {
+    min-height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)50%),url(images/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 1% 2%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+/*--------------------------------------------------------------------------------------------------*/
+/*------------------------------------------ALSHORE LOGO--------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+nav img{
+    width: 80px;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+/*------------------------------------------MENU NAVIGATION--------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+.nav-links{
+    flex-direction: 1;
+    text-align: right;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px;
+    position:relative;
+}
+.nav-links ul li a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links ul li a:hover{
+    color: gold;
+
+}
+.nav-links ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: gold;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+    
+    
+}
+.nav-links ul li:hover::after{
+    width:100% ;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+/*-----------------------------------------SUB MENU-------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+.nav-links ul ul{
+    position: absolute;
+    top: 30px;
+    text-align: left;
+    background: rgba(20, 17, 17, 0.6);
+    display: none;
+    transition: 0.5s;
+    z-index: 2;
+    
+}
+.nav-links ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 130px;
+}
+.nav-links ul ul li a:hover {
+color: black;
+border-color: gold;
+}
+.nav-links ul ul li:hover {
+    background:gold;
+    border-radius: 5px;
+ }
+.nav-links ul li:hover ul {
+display: block;
+}
+/*--------------------------------------------------------------------------------------------------*/
+/*-------------------------------------BANNER CAPTION-----------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+.text-box{
+    width:100%;
+    color: #fff;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+   font-size: 62px; 
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 16px;
+    color: #fff;
+    line-height: 20px;
+}
+
+
+/*----------------hide Menu icon-------------------*/
+.menuICON{
+        position: absolute;
+        display: none;
+        right: 10px;
+        top: auto;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+          
+}
+.sepICONS .fa-solid{
+    display: none;
+}
+
+
+
+
+/*--------------------------------------------------------------------------------------------------*/
+/*----------------------------------------HOME----------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+h1{
+    animation: ZoomIn 1s ease;
+}
+
+.homeButton{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    background:transparent;
+    padding: 12px 34px;
+    font-size: 13px;
+    position: relative;
+    cursor: pointer;
+    animation: FadeIn 2s ease;
+}
+.homeButton:hover{
+border: 1px solid white;
+background: #f44336;
+transition: 1s;
+}
+
+
+.Intro{
+    background: #f8f8f8;
+}
+.HomeContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 65px auto;
+}
+.Home-content{
+    flex: 1;
+    width: 600px;
+    margin: 0px 25px;
+    animation: fadeInUp 2s ease;
+   
+}
+
+.Home-content h2{
+font-size: 38px ;
+margin: 10px 0;
+color: #333;
+} 
+.Home-content p{
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #313131;
+}
+.ALSHORE-logo{
+    flex: 1;
+    width: 600px;
+    margin: auto;
+    animation: fadeInRight 2s ease;
+}
+img{
+    width: 100%;
+    height: auto;
+    border-radius:10px ;
+}
+
+ .AtchupHomeBut{
+display: inline-block;
+background-color: #ff4500;
+color: #ffff;
+padding: 10px 20px;
+border-radius: 5px;
+font-size: 20px;
+border: none;
+cursor:pointer;
+transition: 0.3s ease;
+text-decoration: none;
+}
+.AtchupHomeBut:hover{
+background-color: #ff0000;
+transform: scale(1.1);
+transform: .2s ease;
+}
+.ALSHORE-logo img:hover{
+    transform: scale(1.1);
+    transition: 0.3s ease;
+    }
+    
+@media screen and (max-width:768px) {
+    .Intro{
+        margin: 0;
+        padding: 0px;
+    } 
+    .HomeContainer{
+        width: 90%;
+        flex-direction: column;
+        margin: 0px;
+        padding:5px 5%;
+       
+    }
+    .Home-content{
+        width: 100%;
+        margin: 5px 0px ;
+       
+    }
+    .Home-content h2{
+        font-size: 30px;
+    }
+    .Home-content p{
+        font-size: 18px;
+        margin-bottom: 20px;
+        text-align: justify;
+
+    }
+    .ALSHORE-logo{
+        width:100%
+      
+    }
+
+    .ALSHORE-logo img:hover{
+    transform: scale(1.1);
+    transition: 1s;
+    }
+
+    .homeButton{
+        margin: 0;
+        position: absolute;
+        top:130px;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+    .Explain{
+        margin: 0;
+    }
+    .Home-content h2{
+        text-align: center;
+        transition:1s ease;
+    }
+    .CareerContainer{
+        width: 90%;
+        padding: 0;
+        margin: 2%;
+    }
+    .VideoCon .main-video .title{
+        color: #161616 ;
+        font-size: 15px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+}
+
+@keyframes fadeInUp{
+    0%{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes fadeInDown{
+    0%{
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes fadeInLeft{
+    0%{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes ZoomIn{
+    100%{
+        transform:scale(1);
+    }
+    0%{
+        transform: scale(0);
+    }
+}
+
+@keyframes FadeIn{
+    0%{
+    opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+/*--------------------------*/
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.course h1{
+    font-size: 36px;
+    font-weight: 600;
+    background: #161616;
+    color: white;
+    border-radius: 10px;
+}
+.course h1:hover{
+transform: scale(1.1);
+transition: .5s;
+}
+.course p{
+    color: #333;
+    font-size:14px ;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+
+}
+.course-col h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+@media(max-width:700px) {
+    .row{
+        flex-direction: column;
+    }
+}
+.officials{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding:10px 50px;
+}
+.officials h1{
+    font-size: 36px;
+    font-weight: 600;
+    background: #161616;
+    color: white;
+    border-radius: 10px;
+}
+.officials h1:HOVER{
+    transform: scale(1.1);
+    transition: .5s;
+}
+.officials p{
+    color: #333;
+    font-size:14px ;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.official-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.official-col img{
+    height: 100%;
+    display: block;
+}
+
+.layer{
+    background: rgba(63, 62, 62, 0.3);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.5s;
+    margin: 2px 2px;
+}
+.layer:hover{
+    background: transparent;
+}
+.layer h3{
+width: 100%;
+font-weight: 500;
+color: #fff;
+background: black;
+font-size: 22px;
+padding: 5px 0px;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+position: absolute;
+opacity: 0;
+transition:0.5s;
+}
+
+.layer:hover h3{
+    bottom: 15%;
+    opacity: 1;
+}
+.layer h2{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 15px;
+    font-style: italic;
+    bottom: -25px;
+    background: red;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition:0.5s;
+    }
+    
+    .layer:hover h2{
+        bottom: 10%;
+        opacity: 1;
+    }
+    
+/*--------------------------------------------------------------------------------------------------*/
+/*----------------------------------------CURICULLUM------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+.Cur h5:hover  {
+    color:#f44336;
+    font-weight:bold;
+}
+
+.cur .curPDF iframe:hover h5{
+    color:gold;
+    font-weight:bold;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+/*----------------------------------------OVERVIEW------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+.overViewContainer .OverHead .OverContent H4:hover::after{
+    color: gold;
+}
+
+.overViewContainer .OverContent2:hover img{
+    transform: scale(1.1);
+    transition: 0.5s;
+    }
+    
+.overViewContainer P{
+    color: black;
+}
+
+.overViewContainer .OverHead:hover img{
+    transform: scale(1.1);
+    transition: 0.5s;
+    }   
+
+/*--------------------------------------------------------------------------------------------------*/
+/*----------------------------------------CALENDAR----------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+.tableContainer table tbody tr:hover{
+   background: #f44336;
+   font-weight: bold;
+   color: #fff;
+}
+.tableContainer table thead:hover{
+    background: black;
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+/*-------------------------------------------NEWS---------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+.slider-Wrapper{
+    position: relative;
+    max-width: 48rem;
+    margin:0 auto;
+}
+.slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0,0,0.25);
+    border-radius: 0.5rem;
+}
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align:start ;
+    object-fit: cover;
+}
+
+.slider-Nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+.slider-Nav a{
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+    background: rgb(0, 0, 0);
+    transition: 0.2s;
+}
+.slider-Nav a:hover{
+    opacity: 1;
+    transform: scale(1.2);
+    background: #f44336;
+    transition: 0.5s;
+}
+
+
+@media(max-width:991px){
+    .Caption{
+        display: inline-block;
+        width: 100%;
+    }
+        .miniNews .slider-Wrapper{
+            display: inline-block;
+            width: 100%;  
+        }  
+    }
+@media(max-width:768px){
+.Caption{
+    
+    width: 100%;
+}
+    .miniNews .slider-Wrapper{
+        display:flex;
+        width: 100%;  
+    }
+
+}
+
+/*--------------------------------------------------------------------------------------------------*/
+/*------------------------------------Modules---------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+
+.ModContainer{
+    width: 80%;margin: 2% 10%;
+    height: 60vh;
+    overflow: hidden;
+    object-fit: cover;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsla(200, 4%, 16%, 0.25);
+}
+
+.ModContainer iframe{
+    overflow: hidden;
+    font-weight: bold;
+}
+
+.ModContainer h2{
+    background: black;color: white;padding:5px ;text-align: center;
+}
+
+.ModContainer h2:hover{
+    color: gold;
+}
+/*--------------------------------------------------------------------------------------------------*/
+/*------------------------------------TESTIMONIES---------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+.tesContainer{
+    position: relative;
+    min-height: 100vh;
+    background: white;
+}
+
+.tesContainer .videoBox{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+}
+.tesContainer .videoBox .video{
+    height: 250px;
+    width: 350px;
+    border: 5px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.7);
+    cursor: pointer;
+    overflow: hidden;
+}
+.tesContainer .videoBox .video iframe{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: 1s linear;
+}
+
+
+         /*---------para sa dakong video pop up-----*/
+
+ .tesContainer .FullVideo{
+            position: fixed;
+            top: 0;left: 0;
+            z-index: 100;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0,0,0,0.7);
+            display: none;
+        }
+
+        .tesContainer .FullVideo .video iframe{
+            border: 5px solid #fff;
+            border-radius: 5px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.7);
+            width: 80%;
+            top: 50%; left: 50%;
+            position: fixed;
+            transform: translate(-50%,-50%);
+            object-fit: cover; 
+        }
+
+     .tesContainer .FullVideo  i{
+            position: absolute;
+            top: 30px;
+            right: 30px;
+            cursor: pointer;
+            color: white;
+            font-size: 40px;
+            z-index: 100;
+        
+        }
+
+        .tesContainer .FullVideo  i:hover{
+            color: red;
+            transform: scale(1.2);
+            animation: 0.5s;
+        }
+
+      .tesContainer h4{
+        background: black;color:white;padding: 5px;text-align: center; margin-bottom: 0;
+      }  
+      .tesContainer p{
+        color: #1b1b1b;line-height: normal;text-align: justify;margin-top: 0;padding: 1px;
+        background: linear-gradient(rgb(185, 235, 248),rgb(95, 218, 235) );
+        border-radius: 5px;
+        padding: 5px;
+      }
+
+      @media(max-width:991px){
+        .tesContainer .FullVideo .video iframe{
+            width: 60%;
+        }
+        }
+      @media(max-width:768px){
+        .tesContainer .FullVideo .video iframe{
+            width: 120%;
+        }
+    }
+/*--------------------------------------------------------------------------------------------------*/
+/*---------------------------------------SCHOOLS---------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+.schoolContainer .schools img:hover{
+transform: scale(1.2);
+transition: 1s;
+}
+
+.schoolContainer .schools img:hover .content{
+ background: #f44336;
+ transition: 1s;
+    }
+
+.schoolContainer .schools:hover{
+    background:linear-gradient(rgb(203, 255, 246),rgb(118, 230, 238));
+}
+
+
+.schoolContainer#blur.active{
+    filter: blur(20px);
+    pointer-events: none;
+    user-select: none;
+}
+
+
+/*---------BIG PORTRAITS--------*/
+#popUp{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    padding:10px;
+    background: linear-gradient(rgb(203, 255, 246),rgb(118, 230, 238));
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 10px;
+    box-shadow: 0,5,15,rgba(0,0,0,.7);
+}
+
+#popUp.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    top: 50%;
+}
+
+#popUp .content{
+width: 100%;
+}
+
+ #popUp .content .schoolAd{
+    width: 100%;
+}
+
+#popUp .content h5{
+padding: 0;
+text-align: center;
+}
+
+#popUp img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 3px solid black;
+}
+
+#popUp img:hover{
+    transform: scale(1.3);
+    transition: 1s;
+}
+#popUp h4{
+    background: black;
+    color: white;
+    margin: 0;
+    padding: 2px;
+}
+
+#popUp i{
+    position: absolute;
+    right: -1.5%;
+    top: -1.5%;
+    font-size: 40px;
+    color: black;
+}
+#popUp i:hover{
+    position: absolute;
+    right: -1.5%;
+    top: -1.5%;
+    font-size: 40px;
+    color: red;
+    transform: scale(1.2);
+    transition: .2s;
+    
+}
+
+#popUp .track{
+   border: 2px solid black;
+    border-radius: 10px;
+    padding:2px 2px;
+    margin: 20px 0;
+    width: 50%;
+    height: 30%;
+}
+/*---------BIG PORTRAITS- BANGKAL-------*/
+#popUpBangkal{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    padding:10px;
+    background: linear-gradient(rgb(203, 255, 246),rgb(118, 230, 238));
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 10px;
+    box-shadow: 0,5,15,rgba(0,0,0,.7);
+}
+
+#popUpBangkal.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    top: 50%;
+}
+
+#popUpBangkal .content{
+width: 100%;
+}
+
+ #popUpBangkal .content .schoolAd{
+    width: 100%;
+}
+
+#popUpBangkal .content h5{
+padding: 0;
+text-align: center;
+}
+
+#popUpBangkal img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 3px solid black;
+}
+
+#popUpBangkal img:hover{
+    transform: scale(1.3);
+    transition: 1s;
+}
+#popUpBangkal h4{
+    background: black;
+    color: white;
+    margin: 0;
+    padding: 2px;
+}
+
+#popUpBangkal i{
+    position: absolute;
+    right: -1.5%;
+    top: -1.5%;
+    font-size: 40px;
+    color: black;
+}
+#popUpBangkal i:hover{
+    position: absolute;
+    right: -1.5%;
+    top: -1.5%;
+    font-size: 40px;
+    color: red;
+    transform: scale(1.2);
+    transition: .2s;
+    
+}
+#popUpBangkal .track{
+   border: 2px solid black;
+    border-radius: 10px;
+    padding:2px 2px;
+    margin: 20px 0;
+    width: 50%;
+    height: 30%;
+}
+/*---------big portrait-Barayong--------*/
+
+#popUpBarayong{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    padding:10px;
+    background: linear-gradient(rgb(203, 255, 246),rgb(118, 230, 238));
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 10px;
+    box-shadow: 0,5,15,rgba(0,0,0,.7);
+}
+#popUpBarayong.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    top: 50%;
+}
+#popUpBarayong .content{
+width: 100%;
+}
+ #popUpBarayong .content .schoolAd{
+    width: 100%;
+}
+#popUpBarayong .content h5{
+padding: 0;
+text-align: center;
+}
+#popUpBarayong img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 3px solid black;
+}
+#popUpBarayong img:hover{
+    transform: scale(1.3);
+    transition: 1s;
+}
+#popUpBarayong h4{
+    background: black;
+    color: white;
+    margin: 0;
+    padding: 2px;
+}
+#popUpBarayong i{
+    position: absolute;
+    right: -1.5%;
+    top: -1.5%;
+    font-size: 40px;
+    color: black;
+}
+#popUpBarayong i:hover{
+    position: absolute;
+    right: -1.5%;
+    top: -1.5%;
+    font-size: 40px;
+    color: red;
+    transform: scale(1.2);
+    transition: .2s;
+    
+}
+#popUpBarayong .track{
+   border: 2px solid black;
+    border-radius: 10px;
+    padding:2px 2px;
+    margin: 20px 0;
+    width: 50%;
+    height: 30%;
+}
+/*---------BIG PORTRAITS---Felipe Innocencia-----*/
+#popUpFelipe{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    padding:10px;
+    background: linear-gradient(rgb(203, 255, 246),rgb(118, 230, 238));
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 10px;
+    box-shadow: 0,5,15,rgba(0,0,0,.7);
+}
+
+#popUpFelipe.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    top: 50%;
+}
+
+#popUpFelipe .content{
+width: 100%;
+}
+
+ #popUpFelipe .content .schoolAd{
+    width: 100%;
+}
+
+#popUpFelipe .content h5{
+padding: 0;
+text-align: center;
+}
+
+#popUpFelipe img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 3px solid black;
+}
+
+#popUpFelipe img:hover{
+    transform: scale(1.3);
+    transition: 1s;
+}
+#popUpFelipe h4{
+    background: black;
+    color: white;
+    margin: 0;
+    padding: 2px;
+}
+
+#popUpFelipe i{
+    position: absolute;
+    right: -1.5%;
+    top: -1.5%;
+    font-size: 40px;
+    color: black;
+}
+#popUpFelipe i:hover{
+    position: absolute;
+    right: -1.5%;
+    top: -1.5%;
+    font-size: 40px;
+    color: red;
+    transform: scale(1.2);
+    transition: .2s;
+    
+}
+
+#popUpFelipe .track{
+   border: 2px solid black;
+    border-radius: 10px;
+    padding:2px 2px;
+    margin: 20px 0;
+    width: 50%;
+    height: 30%;
+}
+/*---------BIG PORTRAITS--Ihan------*/
+#popUpIhan{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    padding:10px;
+    background: linear-gradient(rgb(203, 255, 246),rgb(118, 230, 238));
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 10px;
+    box-shadow: 0,5,15,rgba(0,0,0,.7);
+}
+
+#popUpIhan.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    top: 50%;
+}
+
+#popUpIhan .content{
+width: 100%;
+}
+
+ #popUpIhan .content .schoolAd{
+    width: 100%;
+}
+
+#popUpIhan .content h5{
+padding: 0;
+text-align: center;
+}
+
+#popUpIhan img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 3px solid black;
+}
+
+#popUpIhan img:hover{
+    transform: scale(1.3);
+    transition: 1s;
+}
+#popUpIhan h4{
+    background: black;
+    color: white;
+    margin: 0;
+    padding: 2px;
+}
+
+#popUpIhan i{
+    position: absolute;
+    right: -1.5%;
+    top: -1.5%;
+    font-size: 40px;
+    color: black;
+}
+#popUpIhan i:hover{
+    position: absolute;
+    right: -1.5%;
+    top: -1.5%;
+    font-size: 40px;
+    color: red;
+    transform: scale(1.2);
+    transition: .2s;
+    
+}
+
+#popUpIhan .track{
+   border: 2px solid black;
+    border-radius: 10px;
+    padding:2px 2px;
+    margin: 20px 0;
+    width: 50%;
+    height: 30%;
+}
+/*---------BIG PORTRAITS---Lower Bala-----*/
+#popUpBala{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    padding:10px;
+    background: linear-gradient(rgb(203, 255, 246),rgb(118, 230, 238));
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 10px;
+    box-shadow: 0,5,15,rgba(0,0,0,.7);
+}
+
+#popUpBala.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    top: 50%;
+}
+
+#popUpBala .content{
+width: 100%;
+}
+
+ #popUpBala .content .schoolAd{
+    width: 100%;
+}
+
+#popUpBala .content h5{
+padding: 0;
+text-align: center;
+}
+
+#popUpBala img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 3px solid black;
+}
+
+#popUpBala img:hover{
+    transform: scale(1.3);
+    transition: 1s;
+}
+#popUpBala h4{
+    background: black;
+    color: white;
+    margin: 0;
+    padding: 2px;
+}
+
+#popUpBala i{
+    position: absolute;
+    right: -1.5%;
+    top: -1.5%;
+    font-size: 40px;
+    color: black;
+}
+#popUpBala i:hover{
+    position: absolute;
+    right: -1.5%;
+    top: -1.5%;
+    font-size: 40px;
+    color: red;
+    transform: scale(1.2);
+    transition: .2s;
+    
+}
+
+#popUpBala .track{
+   border: 2px solid black;
+    border-radius: 10px;
+    padding:2px 2px;
+    margin: 20px 0;
+    width: 50%;
+    height: 30%;
+}
+/*---------BIG PORTRAITS---Mabuhay-----*/
+#popUpMabuhay{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    padding:10px;
+    background: linear-gradient(rgb(203, 255, 246),rgb(118, 230, 238));
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 10px;
+    box-shadow: 0,5,15,rgba(0,0,0,.7);
+}
+
+#popUpMabuhay.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    top: 50%;
+}
+
+#popUpMabuhay .content{
+width: 100%;
+}
+
+ #popUpMabuhay .content .schoolAd{
+    width: 100%;
+}
+
+#popUpMabuhay .content h5{
+padding: 0;
+text-align: center;
+}
+
+#popUpMabuhay img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 3px solid black;
+}
+
+#popUpMabuhay img:hover{
+    transform: scale(1.3);
+    transition: 1s;
+}
+#popUpMabuhay h4{
+    background: black;
+    color: white;
+    margin: 0;
+    padding: 2px;
+}
+
+#popUpMabuhay i{
+    position: absolute;
+    right: -1.5%;
+    top: -1.5%;
+    font-size: 40px;
+    color: black;
+}
+#popUpMabuhay i:hover{
+    position: absolute;
+    right: -1.5%;
+    top: -1.5%;
+    font-size: 40px;
+    color: red;
+    transform: scale(1.2);
+    transition: .2s;
+    
+}
+
+#popUpMabuhay .track{
+   border: 2px solid black;
+    border-radius: 10px;
+    padding:2px 2px;
+    margin: 20px 0;
+    width: 50%;
+    height: 30%;
+}
+/*---------BIG PORTRAITS--Monopolo------*/
+#popUpMonopolo{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    padding:10px;
+    background: linear-gradient(rgb(203, 255, 246),rgb(118, 230, 238));
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 10px;
+    box-shadow: 0,5,15,rgba(0,0,0,.7);
+}
+
+#popUpMonopolo.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    top: 50%;
+}
+
+#popUpMonopolo .content{
+width: 100%;
+}
+
+ #popUpMonopolo .content .schoolAd{
+    width: 100%;
+}
+
+#popUpMonopolo .content h5{
+padding: 0;
+text-align: center;
+}
+
+#popUpMonopolo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 3px solid black;
+}
+
+#popUpMonopolo img:hover{
+    transform: scale(1.3);
+    transition: 1s;
+}
+#popUpMonopolo h4{
+    background: black;
+    color: white;
+    margin: 0;
+    padding: 2px;
+}
+
+#popUpMonopolo i{
+    position: absolute;
+    right: -1.5%;
+    top: -1.5%;
+    font-size: 40px;
+    color: black;
+}
+#popUpMonopolo i:hover{
+    position: absolute;
+    right: -1.5%;
+    top: -1.5%;
+    font-size: 40px;
+    color: red;
+    transform: scale(1.2);
+    transition: .2s;
+    
+}
+
+#popUpMonopolo .track{
+   border: 2px solid black;
+    border-radius: 10px;
+    padding:2px 2px;
+    margin: 20px 0;
+    width: 50%;
+    height: 30%;
+}
+/*---------BIG PORTRAITS--Pedro Arces------*/
+#popUpPedro{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    padding:10px;
+    background: linear-gradient(rgb(203, 255, 246),rgb(118, 230, 238));
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 10px;
+    box-shadow: 0,5,15,rgba(0,0,0,.7);
+}
+
+#popUpPedro.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    top: 50%;
+}
+
+#popUpPedro .content{
+width: 100%;
+}
+
+ #popUpPedro .content .schoolAd{
+    width: 100%;
+}
+
+#popUpPedro .content h5{
+padding: 0;
+text-align: center;
+}
+
+#popUpPedro img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 3px solid black;
+}
+
+#popUpPedro img:hover{
+    transform: scale(1.3);
+    transition: 1s;
+}
+#popUpPedro h4{
+    background: black;
+    color: white;
+    margin: 0;
+    padding: 2px;
+}
+
+#popUpPedro i{
+    position: absolute;
+    right: -1.5%;
+    top: -1.5%;
+    font-size: 40px;
+    color: black;
+}
+#popUpPedro i:hover{
+    position: absolute;
+    right: -1.5%;
+    top: -1.5%;
+    font-size: 40px;
+    color: red;
+    transform: scale(1.2);
+    transition: .2s;
+    
+}
+
+#popUpPedro .track{
+   border: 2px solid black;
+    border-radius: 10px;
+    padding:2px 2px;
+    margin: 20px 0;
+    width: 50%;
+    height: 30%;
+}
+/*---------BIG PORTRAITS---Sacub-----*/
+#popUpSacub{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    padding:10px;
+    background: linear-gradient(rgb(203, 255, 246),rgb(118, 230, 238));
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 10px;
+    box-shadow: 0,5,15,rgba(0,0,0,.7);
+}
+
+#popUpSacub.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    top: 50%;
+}
+
+#popUpSacub .content{
+width: 100%;
+}
+
+ #popUpSacub .content .schoolAd{
+    width: 100%;
+}
+
+#popUpSacub .content h5{
+padding: 0;
+text-align: center;
+}
+
+#popUpSacub img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 3px solid black;
+}
+
+#popUpSacub img:hover{
+    transform: scale(1.3);
+    transition: 1s;
+}
+#popUpSacub h4{
+    background: black;
+    color: white;
+    margin: 0;
+    padding: 2px;
+}
+
+#popUpSacub i{
+    position: absolute;
+    right: -1.5%;
+    top: -1.5%;
+    font-size: 40px;
+    color: black;
+}
+#popUpSacub i:hover{
+    position: absolute;
+    right: -1.5%;
+    top: -1.5%;
+    font-size: 40px;
+    color: red;
+    transform: scale(1.2);
+    transition: .2s;
+    
+}
+
+#popUpSacub .track{
+   border: 2px solid black;
+    border-radius: 10px;
+    padding:2px 2px;
+    margin: 20px 0;
+    width: 50%;
+    height: 30%;
+}
+/*---------BIG PORTRAITS--StaCruz------*/
+#popUpStaCruz{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    padding:10px;
+    background: linear-gradient(rgb(203, 255, 246),rgb(118, 230, 238));
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 10px;
+    box-shadow: 0,5,15,rgba(0,0,0,.7);
+}
+
+#popUpStaCruz.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    top: 50%;
+}
+
+#popUStaCruzp .content{
+width: 100%;
+}
+
+ #popUpStaCruz .content .schoolAd{
+    width: 100%;
+}
+
+#popUpStaCruz .content h5{
+padding: 0;
+text-align: center;
+}
+
+#popUpStaCruz img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 3px solid black;
+}
+
+#popUpStaCruz img:hover{
+    transform: scale(1.3);
+    transition: 1s;
+}
+#popUpStaCruz h4{
+    background: black;
+    color: white;
+    margin: 0;
+    padding: 2px;
+}
+
+#popUpStaCruz i{
+    position: absolute;
+    right: -1.5%;
+    top: -1.5%;
+    font-size: 40px;
+    color: black;
+}
+#popUpStaCruz i:hover{
+    position: absolute;
+    right: -1.5%;
+    top: -1.5%;
+    font-size: 40px;
+    color: red;
+    transform: scale(1.2);
+    transition: .2s;
+    
+}
+
+#popUpStaCruz .track{
+   border: 2px solid black;
+    border-radius: 10px;
+    padding:2px 2px;
+    margin: 20px 0;
+    width: 50%;
+    height: 30%;
+}
+
+.fullImahe .FullImaheClose i:hover{
+    color:red;
+    transform: scale(1.2);
+    transition: .2s;
+}
+
+/*---------BIG PORTRAIT Sulop--------*/
+#popUpSulop{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    padding:10px;
+    background: linear-gradient(rgb(203, 255, 246),rgb(118, 230, 238));
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 10px;
+    box-shadow: 0,5,15,rgba(0,0,0,.7);
+}
+#popUpSulop.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    top: 50%;
+}
+#popUpSulop .content{
+width: 100%;
+}
+ #popUpSulop .content .schoolAd{
+    width: 100%;
+}
+#popUpSulop .content h5{
+padding: 0;
+text-align: center;
+}
+#popUpSulop img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 3px solid black;
+}
+#popUpSulop img:hover{
+    transform: scale(1.3);
+    transition: 1s;
+}
+#popUpSulop h4{
+    background: black;
+    color: white;
+    margin: 0;
+    padding: 2px;
+}
+#popUpSulop i{
+    position: absolute;
+    right: -1.5%;
+    top: -1.5%;
+    font-size: 40px;
+    color: black;
+}
+#popUpSulop i:hover{
+    position: absolute;
+    right: -1.5%;
+    top: -1.5%;
+    font-size: 40px;
+    color: red;
+    transform: scale(1.2);
+    transition: .2s;
+    
+}
+#popUpSulop .track{
+   border: 2px solid black;
+    border-radius: 10px;
+    padding:2px 2px;
+    margin: 20px 0;
+    width: 50%;
+    height: 30%;
+}
+
+/*---------BIG PORTRAITS- PADADA-------*/
+#popUpPadada{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    padding:10px;
+    background: linear-gradient(rgb(203, 255, 246),rgb(118, 230, 238));
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 10px;
+    box-shadow: 0,5,15,rgba(0,0,0,.7);
+}
+#popUpPadada.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    top: 50%;
+}
+#popUpPadada .content{
+width: 100%;
+}
+ #popUpPadada .content .schoolAd{
+    width: 100%;
+}
+#popUpPadada .content h5{
+padding: 0;
+text-align: center;
+}
+#popUpPadada img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 3px solid black;
+}
+#popUpPadada img:hover{
+    transform: scale(1.3);
+    transition: 1s;
+}
+#popUpPadada h4{
+    background: black;
+    color: white;
+    margin: 0;
+    padding: 2px;
+}
+#popUpPadada i{
+    position: absolute;
+    right: -1.5%;
+    top: -1.5%;
+    font-size: 40px;
+    color: black;
+}
+#popUpPadada i:hover{
+    position: absolute;
+    right: -1.5%;
+    top: -1.5%;
+    font-size: 40px;
+    color: red;
+    transform: scale(1.2);
+    transition: .2s;
+    
+}
+#popUpPadada .track{
+   border: 2px solid black;
+    border-radius: 10px;
+    padding:2px 2px;
+    margin: 20px 0;
+    width: 50%;
+    height: 30%;
+}  
+
+/*---------BIG PORTRAITS-- Tudaya------*/
+#popUpTudaya{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 60%;
+    padding:10px;
+    background: linear-gradient(rgb(203, 255, 246),rgb(118, 230, 238));
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    border-radius: 10px;
+    box-shadow: 0,5,15,rgba(0,0,0,.7);
+}
+
+#popUpTudaya.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    top: 50%;
+}
+
+#popUpTudaya .content{
+width: 100%;
+}
+
+ #popUpTudaya .content .schoolAd{
+    width: 100%;
+}
+
+#popUpTudaya .content h5{
+padding: 0;
+text-align: center;
+}
+
+#popUpTudaya img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: 3px solid black;
+}
+
+#popUpTudaya img:hover{
+    transform: scale(1.3);
+    transition: 1s;
+}
+#popUpTudaya h4{
+    background: black;
+    color: white;
+    margin: 0;
+    padding: 2px;
+}
+
+#popUpTudaya i{
+    position: absolute;
+    right: -1.5%;
+    top: -1.5%;
+    font-size: 40px;
+    color: black;
+}
+#popUpTudaya i:hover{
+    position: absolute;
+    right: -1.5%;
+    top: -1.5%;
+    font-size: 40px;
+    color: red;
+    transform: scale(1.2);
+    transition: .2s;
+    
+}
+
+#popUpTudaya .track{
+   border: 2px solid black;
+    border-radius: 10px;
+    padding:2px 2px;
+    margin: 20px 0;
+    width: 50%;
+    height: 30%;
+}
+
+
+
+/*--------------------------------------------------------------------------------------------------*/
+/*----------------------------------------CAREER-----------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+    .CareerContainer p{
+        color: black;
+    }
+/*--------------------------------------------------------------------------------------------------*/
+/*----------------------------------------VIDEO------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+ .heading{
+    color: #4b4a4a;
+    font-size: 40px;
+    text-align: center;
+    padding: 10px;
+ }
+.VideoCon{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+    align-items: flex-start;
+    padding: 5px 5%;
+}
+.VideoCon .main-video{
+background: white;
+border-radius: 5px;
+padding: 10px;
+
+
+}
+.VideoCon .main-video iframe{
+    width: 100%;
+    border-radius: 5px;
+} 
+.VideoCon .main-video .title{
+    color: #161616 ;
+    font-size: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.VideoCon .video-list{
+background: white;
+border-radius: 5px;
+max-height: 510px;
+overflow-y: scroll;
+}
+.VideoCon .video-list .vid iframe {
+    border-radius: 5px ;
+}
+.VideoCon .video-list::-webkit-scrollbar{
+    width: 7px;
+}
+.VideoCon .video-list::-webkit-scrollbar-track{
+    background: #ccc;
+    border-radius: 5px;
+}
+.VideoCon .video-list::-webkit-scrollbar-thumb{
+    background: #666;
+    border-radius: 5px;
+}
+.VideoCon .video-list .vid{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #f7f7f7;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid bga(0,0,0,.1);
+}
+
+.VideoCon .video-list .vid:hover{
+    background-color: #b4b1b1;
+}
+.VideoCon .video-list .vid.active{
+    background:#2980b9  ;
+}
+.VideoCon .video-list .vid.active .title{
+color: #fff;
+}
+
+.VideoCon .video-list .vid .title{
+    color:#333;
+    font-size: 17px;
+
+    }
+
+.video-list .vid iframe{
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
+    
+@media(max-width:991px){
+    .VideoCon{
+        
+        grid-template-columns: 1.5fr 1fr;
+        padding: 10px;
+    }
+}
+    
+@media(max-width:768px){
+    .VideoCon{
+        
+        grid-template-columns: 1fr;
+        padding: 10px;
+        
+    }
+    
+    .VideoCon .main-video iframe{
+        height:  300px;
+    }
+    .Selector .LSdes{
+        font-size: 12px;
+    }
+    .VideoNaThis .heading{
+        font-size: 20px;
+    }
+}
+/*--------------------------------------------------------------------------------------------------*/
+/*----------------------------------------CONTACT US-----------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+.location{
+    width: 80%;
+    margin: auto;
+    margin-top: 1%;
+    padding: 0;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+.location iframe{
+    width: 100%;
+}
+  
+.AtchupRed{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    background: #f44336;
+    padding: 12px 34px;
+    font-size: 13px;
+    position: relative;
+    cursor: pointer;
+}
+.AtchupRed:hover{
+border: 1px solid #fff;
+background: #1b1b1b;
+color: gold;
+transition: 1s;
+}
+
+.dakongscreen{
+    width: 80%;
+    margin: 10%;
+    margin-top: 5%;
+}
+
+.dakongscreen h5{
+    color: black;
+}
+.onggoy{
+top:0;
+width: 45%;
+display: inline-block;
+}
+.formSaMessage{
+    width: 50%;
+    display: block;
+    float: right;
+    margin-right: 2%;
+    }
+
+.onggoy div{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-bottom: 40px;
+    }
+
+.onggoy div .fa-solid{
+    font-size: 28px;
+    color: #f44336;
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.onggoy div p{
+padding: 0;
+}
+.onggoy div h5{
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #131313;
+    font-weight:bold;
+    }
+
+  
+.formSaMessage form input,
+.formSaMessage form textarea {
+    width:100% ;
+    padding: 10px;
+    overflow: hidden;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    resize: none;
+}
+    
+
+@media(max-width:768px){
+  .popUpBarayong  .offerings .track{
+        width: 100%;
+        display: block;
+        background: red;
+    }
+
+}
+/*--------------------------------------------------------------------------------------------------*/
+/*-------------------------------FREQUENTLY ASKED QUESTIONS------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+/*body .agaray{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 50vh;
+}*/
+.container{
+    margin: 40px 10%;
+    max-width: 100%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.container h1{
+    color: #4b4a4a;
+}
+.container .tab{
+    position: relative;
+    background:white;
+    padding: 0 20px 20px ;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.9);
+    overflow: hidden;
+    animation: fadeInUp 2s ease;
+}
+.container .tab input{
+    appearance: none;
+}
+.container .tab label{
+display: flex;
+align-items: center;
+cursor: pointer;
+}
+.container .tab label:after{
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-weight:bold;
+    color: rgba(0,0,0,0.5);
+    transition: tansform 1s;
+}
+.container .tab:hover label:after {
+    color: #1b1b1b;
+}
+.container .tab input:checked ~label::after{
+    transform: rotate(135deg);
+    color: white;
+   
+}
+.container .tab label h2{
+    width: 40px;
+    height: 40px;
+    background: #1b1b1b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.25em;
+    border-radius: 5px;
+    margin-right: 10px;
+ 
+}
+/*
+.container .tab input:checked ~ label h2{
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    color: rgba(255,255,255,0.2);
+    font-size: 8em;
+    justify-content: first baseline;
+    padding: 20px;
+}
+.container .tab:nth-child(1) label h2{
+    background: linear-gradient(135deg,#1915f7,#179af1);
+}
+
+.container .tab:nth-child(2) label h2{
+    background: linear-gradient(135deg,#39ec0c,#66ec0c);
+
+} */
+.container .tab input:checked ~ label h2{
+
+    color:gold;
+}
+.container .tab label h3{
+    position: relative;
+    font-weight: 500;
+    color: #333;
+}
+.container .tab .content{
+    max-height:0 ;
+    transition: .20s;
+    overflow: hidden;
+}
+.container .tab input:checked ~ .content {
+    max-height: 100vh;
+}
+.container .tab .content p {
+    position: relative;
+    padding: 10px 0;
+    line-height: 20px;
+    font-weight: bold;
+    margin: 2px 2px;
+    color: #333;
+    
+}
+
+
+/*--------------------------------------------------------------------------------------------------*/
+/*------------------------------------------FOOTER--------------------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+    .footer{
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    }
+    h4{
+        margin-bottom: 10px;
+        margin-top: 20px;
+        font-weight: 600;
+    }
+    p{
+        color: #4b4a4a;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 10px;
+        padding: 10px;
+    }
+    .footer .fa-brands{
+        margin: 0 13px;
+        cursor: pointer;
+        padding: 18px 0;
+    }
+
+    .footer .fa-brands:hover{
+        transform: scale(1.3);
+        transition: 0.2s;
+        color: gold;
+    }
+    .fa-heart{
+        color: #fc0101;
+    }
+/*--------------------------------------------------------------------------------------------------*/
+/*---------------------------------------RESPONSIVE DEVICES-----------------------------------------*/
+/*--------------------------------------------------------------------------------------------------*/
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: fixed;
+        background:#f44336;
+        height: 100vh;
+        width: 50%;
+        top:0;
+        right:-300px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+
+    .nav-links ul ul{
+        position: static;
+        top: 30px;
+        text-align: left;
+        display: none;
+        transition: 0.5s;
+        z-index: 2;
+        padding-left: 5px;
+    }
+    .show{
+        display: block;
+        cursor: pointer;
+    }
+    .nav-links .sepICONS .fa-solid {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+     .menuICON {
+        display: block;
+        cursor: pointer;
+    }
+
+/*---contact----*/
+    
+.formSaMessage{
+    float:none;
+    display: block;
+    width: 100%;
+    }
+    .onggoy{
+    width: 100%;
+    display: iblock;
+    }
+/*---Overview-------*/
+.overViewContainer .OverHead{
+    display: block;
+    width: 100%;
+}
+
+.overViewContainer .OverContent2{
+    width: 100%;
+    align-items:normal;
+    
+  
+}
+
+.overViewContainer .OverHead .OverContent{
+    width: 100%;
+}
+
+/*---News and Events-------*/
+
+
+/*----- testimonies ----*/
+
+
+.schoolContainer{
+    display: block;
+}
+
+#popUp{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+
+#popUpimg{
+    width: 70px;
+    height: 70px;
+}
+
+#popUpBarayong{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+
+#popUpBarayong img{
+    width: 70px;
+    height: 70px;
+}
+#popUpPadada{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+
+#popUpPadada img{
+    width: 70px;
+    height: 70px;
+}
+
+#popUpSulop{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+#popUpSulop img{
+    width: 70px;
+    height: 70px;
+}
+
+#popUpTudaya{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+#popUpTudaya img{
+    width: 70px;
+    height: 70px;
+}
+#popUpBangkal{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+#popUpBangkal img{
+    width: 70px;
+    height: 70px;
+}
+#popUpFelipe{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+#popUpFelipe img{
+    width: 70px;
+    height: 70px;
+}
+#popUpIhan{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+#popUpIhan img{
+    width: 70px;
+    height: 70px;
+}
+#popUpBala{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+#popUpBala img{
+    width: 70px;
+    height: 70px;
+}
+#popUpMabuhay{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+#popUpMabuhay img{
+    width: 70px;
+    height: 70px;
+}
+#popUpMonopolo{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+#popUpMonopolo img{
+    width: 70px;
+    height: 70px;
+}
+
+#popUpPedro{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+#popUpPedro img{
+    width: 70px;
+    height: 70px;
+}
+#popUpSacub{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+#popUpSacub img{
+    width: 70px;
+    height: 70px;
+}
+#popUpStaCruz{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80%;
+}
+#popUpStaCruz img{
+    width: 70px;
+    height: 70px;
+}
+.tesContainer .FullVideo .video{
+    border: 5px solid #fff;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.7);
+    width: 75%;
+    top: 50%; left: 50%;
+    position: fixed;
+    transform: translate(-50%,-50%);
+    object-fit: cover; 
+    
+}
+
+}
+
+
+/*----animatiooonnsss---------------*/
+.location{
+    animation: fadeInUp 2s ease;
+}
+h2{
+    animation: FadeIn 2s ease;
+}
+.VideoNaThis .heading{
+        animation: FadeIn 2s ease;
+}
+
+.main-video .title{
+    animation: fadeInRight 2s ease;
+}
+.tableContainer{
+    animation: fadeInUp 2s ease;
+}
+
+.BagoNews{
+    animation: fadeInUp 2s ease;
+}
+.videoBox .video{
+    animation: ZoomIn 1s ease;
+}
+.videoBox p{
+    animation: fadeInUp  2s ease;
+}
+.videoBox h4{
+    animation: fadeInRight  2s ease;
+}
+
+.schoolContainer .schools{
+    animation: ZoomIn 2s ease;
+}
+
+.CareerContainer h1{
+    animation: FadeIn 2s ease;
+}
+.CareerContainer p{
+    font-size: 15px;
+    animation: fadeInUp 2s ease;
+}
+
+.CareerContainer .acad{
+    animation: fadeInLeft 2s ease;
+}
+
+.CareerContainer ol{
+    animation:  FadeIn 2s ease;
+}
+
+.ModContainer{
+    animation: fadeInUp 2s ease; 
+}
+.OverLogo{
+    animation: fadeInLeft 2s ease; 
+}
+.overViewContainer h4{
+    animation: fadeInRight 2s ease; 
+}
+.overViewContainer p{
+    animation: fadeInUp 2s ease; 
+}
+
+.curPDF{
+    animation: fadeInRight 2s ease; 
+}
+.EntireCur h3{
+    animation: fadeInLeft 2s ease; 
+}
+.video-list{
+    animation: fadeInLeft 2s ease; 
+}
+.main-video{
+    animation: fadeInRight 2s ease; 
+}
+
+
+@media(max-width:700px) {
+    .epal{
+        flex-direction: column;
+    }
+}

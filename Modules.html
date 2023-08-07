@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title> ALSHORE </title>
+        <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+    <body>
+        <section class="header"> 
+            <div class="menuICON"><i class="fa-solid fa-bars" onclick="showMenu()"></i></div>
+        <nav>
+            <a href="Home.html"><img src="images/logo.png" class="ano"> </a>
+            <div class="nav-links" id="navlinks">
+                <div class="sepICONS"><i class="fa-solid fa-circle-xmark" onclick="hideMenu()"></i></div>
+                <ul>
+                    <li> <a href="Home.html"><i class="fa-solid fa-house" ></i>&nbsp;Home</a></li>
+                    <li> <a href=""><i class="fa-solid fa-mug-hot"></i>&nbsp;Features</a>
+                        <ul>
+                            <li><a href="News.html">News & Events  </a></li>
+                            <li><a href="Events.html">Calendar</a></li>
+                            <li><a href="Testimonies.html">Testimonies</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="Schools.html"><i class="fa-solid fa-school"></i>&nbsp;Schools</a></li>
+                    <li> <a href="Curriculum.html"><i class="fa-solid fa-pen-nib"></i>&nbsp;Curriculum</a></li>
+                    <li> <a href=""><i class="fa-solid fa-book" style="color:gold;"></i>&nbsp;<font color=gold>Resources</font></a>
+                     <ul>
+                            <li><a href="Videos.html"> Instructional Videos</a></li>
+                            <li><a href="Modules.html"> <i class="fa-solid fa-square-check"></i> &nbsp;Learning Modules</a></li>
+                        </ul>
+                    </li>
+                    <li> <a href=""><i class="fa-solid fa-user"></i>&nbsp;About</a>
+                        <ul>
+                            <li><a href="Careers.html">Careers</a></li>
+                            <li><a href="Contact.html"> Contact</a></li>
+                            <li><a href="Structure.html"> Organizational Structure</a></li>
+                            <li><a href="Overview.html">Overview </a></li>
+                        </ul>
+                    </li>
+                    <li> <a href="FAQ.html"><i class="fa-solid fa-message"></i>&nbsp;FAQ</a></li>
+                </ul>
+            </div>
+        
+        </nav>
+        <div class="text-box">
+            <h1>LEARNING MODULES</h1>
+            <p></p>
+            
+        </div>
+        </section>
+<!------------------------------CONTENT OF THE PAGE--------------------------------------------------------> 
+
+<div class="ModContainer" style="background:linear-gradient(rgb(196, 251, 255) , rgb(218, 255, 253));">
+    <h2>GRADE 11 MODULES</h2>
+    <iframe src="https://drive.google.com/embeddedfolderview?id=1onk5pQYk2rKRiA12DY05UTWm3v2WBiZS#list" 
+    style="width:100%; height:100%; border:0;"></iframe>
+</div>
+
+
+<div class="ModContainer" style="background:linear-gradient(rgb(253, 195, 119) , rgb(250, 224, 76));">
+    <h2>GRADE 12 MODULES</h2>
+    <iframe src="https://drive.google.com/embeddedfolderview?id=18Xw1crZ3IaN8Ai-4Bs-JcXaHE4J5vqsJ#list" 
+    style="width:100%; height:100%; border:0;"></iframe>
+</div>
+
+
+<!------------------FOOTER------------------------------------------------------>
+<section class="footer">
+    <H4>K to 12 Graduates: </H4>
+    <p>Pursuing Dreams and Fostering Resilience in the Face of Adversity </p>
+    <div class="icon">
+        <a href="https://www.facebook.com/groups/ALSDAVAO" target="_blank" style="color: black;"><i  class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.youtube.com/@alsshsbanahi" target="_blank" style="color: black;" ><i class="fa-brands fa-youtube"></i></a>
+        <a href="Contact.html"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+    <p>Made with <i class="fa-regular fa-heart"></i> by Kaiser Leon</p>
+</section>
+
+
+<!-------------TOGGLE MENU----------------------------------------------------------->
+        <script>
+            var navlinks=document.getElementById("navlinks");
+                function showMenu(){
+                    navlinks.style.right="0";
+                }
+                function hideMenu(){
+                    navlinks.style.right="-300px";
+                }
+        </script>
+
+    </body>
+</html>
